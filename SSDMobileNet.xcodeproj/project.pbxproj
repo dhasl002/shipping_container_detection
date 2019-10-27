@@ -22,10 +22,10 @@
 		46A38331201917DA0097FA36 /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A38325201917DA0097FA36 /* CVPixelBuffer+Helpers.swift */; };
 		46A38332201917DA0097FA36 /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A38326201917DA0097FA36 /* NonMaxSuppression.swift */; };
 		46A38333201917DA0097FA36 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A38327201917DA0097FA36 /* MLMultiArray+Image.swift */; };
-		46A38335201917FB0097FA36 /* ssd_mobilenet_feature_extractor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 46A38334201917FB0097FA36 /* ssd_mobilenet_feature_extractor.mlmodel */; };
 		46A383372019180B0097FA36 /* SSDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A383362019180B0097FA36 /* SSDViewController.swift */; };
 		46A38339201918290097FA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A38338201918290097FA36 /* Main.storyboard */; };
 		46A3833B201918780097FA36 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3833A201918780097FA36 /* Utility.swift */; };
+		59B8853823664086003D561B /* convertedModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 59B8853723664085003D561B /* convertedModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +46,10 @@
 		46A38325201917DA0097FA36 /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
 		46A38326201917DA0097FA36 /* NonMaxSuppression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
 		46A38327201917DA0097FA36 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
-		46A38334201917FB0097FA36 /* ssd_mobilenet_feature_extractor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ssd_mobilenet_feature_extractor.mlmodel; sourceTree = "<group>"; };
 		46A383362019180B0097FA36 /* SSDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSDViewController.swift; sourceTree = "<group>"; };
 		46A38338201918290097FA36 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		46A3833A201918780097FA36 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		59B8853723664085003D561B /* convertedModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = convertedModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,7 @@
 		46A383082019175C0097FA36 /* SSDMobileNet */ = {
 			isa = PBXGroup;
 			children = (
+				59B8853723664085003D561B /* convertedModel.mlmodel */,
 				46A3831B201917DA0097FA36 /* CoreMLHelpers */,
 				46A383092019175C0097FA36 /* AppDelegate.swift */,
 				46A38322201917DA0097FA36 /* SSDPostprocessor.swift */,
@@ -93,7 +94,6 @@
 				46A383122019175C0097FA36 /* LaunchScreen.storyboard */,
 				46A383152019175C0097FA36 /* Info.plist */,
 				46A38324201917DA0097FA36 /* coco_labels_list.txt */,
-				46A38334201917FB0097FA36 /* ssd_mobilenet_feature_extractor.mlmodel */,
 			);
 			path = SSDMobileNet;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 				46A3832C201917DA0097FA36 /* BoundingBox.swift in Sources */,
 				46A383372019180B0097FA36 /* SSDViewController.swift in Sources */,
 				46A3832A201917DA0097FA36 /* UIImage+CVPixelBuffer.swift in Sources */,
-				46A38335201917FB0097FA36 /* ssd_mobilenet_feature_extractor.mlmodel in Sources */,
 				46A3832B201917DA0097FA36 /* Array.swift in Sources */,
+				59B8853823664086003D561B /* convertedModel.mlmodel in Sources */,
 				46A38331201917DA0097FA36 /* CVPixelBuffer+Helpers.swift in Sources */,
 				46A3832F201917DA0097FA36 /* MultiArray.swift in Sources */,
 				46A3833B201918780097FA36 /* Utility.swift in Sources */,
@@ -331,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2PSJD7R5S5;
+				DEVELOPMENT_TEAM = NUG79H4J5C;
 				INFOPLIST_FILE = SSDMobileNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vonholst.SSDMobileNet;
@@ -346,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2PSJD7R5S5;
+				DEVELOPMENT_TEAM = NUG79H4J5C;
 				INFOPLIST_FILE = SSDMobileNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vonholst.SSDMobileNet;

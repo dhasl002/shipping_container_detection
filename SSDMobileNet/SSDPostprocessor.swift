@@ -6,8 +6,8 @@ struct BoundingBox2 {
     let xMin: Double
     let yMax: Double
     let xMax: Double
-    let imgHeight = 300.0
-    let imgWidth = 300.0
+    let imgHeight = 400.0
+    let imgWidth = 225.0
     
     init(yMin: Double, xMin: Double, yMax: Double, xMax: Double) {
         self.yMin = yMin

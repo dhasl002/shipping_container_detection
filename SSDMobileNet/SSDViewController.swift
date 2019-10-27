@@ -19,7 +19,7 @@ class SSDViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferD
     var lastExecution = Date()
     var screenHeight: Double?
     var screenWidth: Double?
-    let ssdPostProcessor = SSDPostProcessor(numAnchors: 1917, numClasses: 90)
+    let ssdPostProcessor = SSDPostProcessor(numAnchors: 1983, numClasses: 1)
     var visionModel:VNCoreMLModel?
 
     
@@ -83,7 +83,7 @@ class SSDViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferD
     }
 
     func setupVision() {
-        guard let visionModel = try? VNCoreMLModel(for: ssd_mobilenet_feature_extractor().model)
+        guard let visionModel = try? VNCoreMLModel(for: convertedModel().model)
             else { fatalError("Can't load VisionML model") }
         self.visionModel = visionModel
     }
